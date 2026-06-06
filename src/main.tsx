@@ -180,6 +180,35 @@ function normalizeImageSlides(images: string[]) {
   return Array.from(new Set(images.filter((image) => typeof image === 'string' && image.trim() !== '')));
 }
 
+function resolvePublicAsset(value: string) {
+  if (!value.startsWith('/assets/')) {
+    return value;
+  }
+
+  const appScript = document.querySelector('script[type="module"][src*="/assets/"]') as HTMLScriptElement | null;
+  const assetBase = appScript?.src ? new URL('.', appScript.src).toString() : new URL('/assets/', window.location.origin).toString();
+
+  return new URL(value.replace('/assets/', ''), assetBase).toString();
+}
+
+function resolveBuildenvAssetPaths<T>(value: T): T {
+  if (typeof value === 'string') {
+    return resolvePublicAsset(value) as T;
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => resolveBuildenvAssetPaths(item)) as T;
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, resolveBuildenvAssetPaths(item)]),
+    ) as T;
+  }
+
+  return value;
+}
+
 function useProjects() {
   const [items, setItems] = useState<Project[]>(hasWordPressRestBase() ? [] : buildenvProjects);
   const [loaded, setLoaded] = useState(!hasWordPressRestBase());
@@ -327,33 +356,37 @@ type Project = {
   date?: string;
 };
 
+const buildenvResolvedContent = resolveBuildenvAssetPaths(buildenvContent);
+
 const buildenvSiteSettings = {
   ...defaultSiteSettings,
-  ...buildenvContent.siteSettings,
+  ...buildenvResolvedContent.siteSettings,
   heroImages: {
     ...defaultSiteSettings.heroImages,
-    ...buildenvContent.siteSettings.heroImages,
+    ...buildenvResolvedContent.siteSettings.heroImages,
   },
   galleries: {
     ...defaultSiteSettings.galleries,
-    ...buildenvContent.siteSettings.galleries,
+    ...buildenvResolvedContent.siteSettings.galleries,
   },
   careers: {
     ...defaultSiteSettings.careers,
-    ...buildenvContent.siteSettings.careers,
+    ...buildenvResolvedContent.siteSettings.careers,
   },
-  kernpuntenHome: Array.isArray(buildenvContent.siteSettings.kernpuntenHome)
-    ? buildenvContent.siteSettings.kernpuntenHome
+  kernpuntenHome: Array.isArray(buildenvResolvedContent.siteSettings.kernpuntenHome)
+    ? buildenvResolvedContent.siteSettings.kernpuntenHome
     : [],
-  werkgebied: Array.isArray(buildenvContent.siteSettings.werkgebied) ? buildenvContent.siteSettings.werkgebied : [],
-  kernpuntenOverOns: Array.isArray(buildenvContent.siteSettings.kernpuntenOverOns)
-    ? buildenvContent.siteSettings.kernpuntenOverOns
+  werkgebied: Array.isArray(buildenvResolvedContent.siteSettings.werkgebied)
+    ? buildenvResolvedContent.siteSettings.werkgebied
+    : [],
+  kernpuntenOverOns: Array.isArray(buildenvResolvedContent.siteSettings.kernpuntenOverOns)
+    ? buildenvResolvedContent.siteSettings.kernpuntenOverOns
     : [],
 } satisfies SiteSettings;
 
-const buildenvProjects = buildenvContent.projects as Project[];
-const buildenvServices = buildenvContent.services as Service[];
-const buildenvRentals = buildenvContent.rentals as RentalItem[];
+const buildenvProjects = buildenvResolvedContent.projects as Project[];
+const buildenvServices = buildenvResolvedContent.services as Service[];
+const buildenvRentals = buildenvResolvedContent.rentals as RentalItem[];
 
 const navItems = [
   ['HOME', '/'],
