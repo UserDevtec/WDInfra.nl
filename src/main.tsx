@@ -689,8 +689,9 @@ function HomePage({
             </p>
             <h1>Sterk in bestrating, grondwerk en riolering</h1>
             <p className="hero-subtitle">
-              Praktisch en betrouwbaar infra werk voor particulieren, bedrijven,
-              aannemers en overheden in de regio groot Rotterdam.
+              WD Infra legt, herstelt en onderhoudt buitenruimte voor
+              particulieren, bedrijven, aannemers en overheden in de regio
+              groot Rotterdam.
             </p>
             <div className="button-row">
               <Link className="button button-primary" href="/diensten" onNavigate={navigate}>
@@ -720,29 +721,29 @@ function HeroExamplesPage({ navigate }: { navigate: (href: string) => void }) {
     {
       name: 'Variant 1',
       label: 'Split-screen project',
-      title: 'Uitvoering voor buitenruimte zonder omwegen',
-      text: 'Een ruime witte voorzijde met een groot projectbeeld ernaast. Rustig, direct en sterk gericht op contact.',
+      title: 'Straatwerk en grondwerk direct goed voorbereid',
+      text: 'Een rustige variant met groot projectbeeld, duidelijke diensten en snelle route naar contact.',
       className: 'hero-example-split',
     },
     {
       name: 'Variant 2',
       label: 'Operationeel dashboard',
       title: 'Planning, materieel en uitvoering strak geregeld',
-      text: 'Een zakelijke variant met disciplines, werkgebied en inzetbaarheid direct zichtbaar voor aannemers en gemeenten.',
+      text: 'Een zakelijke variant waarin diensten, werkgebied en inzetbaarheid direct zichtbaar zijn.',
       className: 'hero-example-dashboard',
     },
     {
       name: 'Variant 3',
       label: 'Editorial projectbeeld',
-      title: 'Buitenruimte die klopt van ondergrond tot afwerking',
-      text: 'Een beeldgedreven hero met veel rust, stevige typografie en een meer premium eerste indruk.',
+      title: 'Van ondergrond tot nette bestrating',
+      text: 'Een beeldgedreven hero met meer nadruk op vakwerk, materiaal en eindresultaat.',
       className: 'hero-example-editorial',
     },
     {
       name: 'Variant 4',
       label: 'Werken bij eerst',
-      title: 'Maak werk van buitenruimte bij WD Infra',
-      text: 'Een variant waarin personeelswerving meer gewicht krijgt, zonder het dienstenaanbod te verliezen.',
+      title: 'Kom werken aan straatwerk, grondwerk en riolering',
+      text: 'Een variant waarin nieuwe vakmensen direct worden aangesproken zonder het dienstenaanbod te verliezen.',
       className: 'hero-example-recruitment',
     },
   ];
@@ -864,8 +865,8 @@ function ServicesSection({
       <div className="container">
         <SectionHeading
           eyebrow="Diensten"
-          title="Duidelijk aanbod voor buitenruimte en infra"
-          text="WD Infra voert grote en kleinere infrastructurele projecten uit voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren."
+          title="Straatwerk, grondwerk en riolering onder één dak"
+          text="Van herbestrating en terreinverharding tot grondverzet en rioolaanpassingen: WD Infra levert vakmensen en materieel voor werk buiten."
         />
         <div className="service-grid">
           {services.length > 0 ? (
@@ -950,9 +951,9 @@ function WhyUs() {
           <p className="eyebrow">Waarom WD Infra?</p>
           <h2>Persoonlijk, korte lijnen en flexibel</h2>
           <p>
-            Geen overbodige lagen, maar duidelijke afspraken en mensen die weten
-            wat er buiten nodig is. WD Infra combineert vakmanschap met een
-            praktische manier van samenwerken.
+            U schakelt direct met mensen die het werk buiten begrijpen. Daardoor
+            blijven afspraken helder en kan er snel worden bijgestuurd als de
+            situatie op locatie verandert.
           </p>
         </Reveal>
         <div className="value-grid">
@@ -971,9 +972,9 @@ function WhyUs() {
 
 function ProcessSection() {
   const steps = [
-    ['01', 'Korte intake', 'We bespreken de vraag, locatie, planning en praktische randvoorwaarden.'],
-    ['02', 'Heldere aanpak', 'U krijgt duidelijkheid over werkzaamheden, materieel en uitvoering.'],
-    ['03', 'Uitvoering', 'Het team schakelt snel, werkt netjes en houdt afspraken overzichtelijk.'],
+    ['01', 'Korte opname', 'We bekijken de locatie, bereikbaarheid, ondergrond en planning.'],
+    ['02', 'Heldere werkafspraken', 'U weet welke werkzaamheden, machines en vakmensen worden ingezet.'],
+    ['03', 'Net uitgevoerde oplevering', 'De ploeg werkt door volgens afspraak en levert het terrein bruikbaar op.'],
   ];
 
   return (
@@ -982,7 +983,7 @@ function ProcessSection() {
         <SectionHeading
           eyebrow="Aanpak"
           title="Van eerste vraag naar nette oplevering"
-          text="De werkwijze blijft compact en duidelijk, ook bij projecten waar meerdere partijen betrokken zijn."
+          text="Een compacte werkwijze voor projecten waar planning, bereikbaarheid en afstemming belangrijk zijn."
         />
         <div className="process-grid">
           {steps.map(([number, title, text]) => (
@@ -1026,7 +1027,7 @@ function ProjectsPreview({
         <div className="section-heading section-heading-row">
           <div>
             <p className="eyebrow">Projecten</p>
-            <h2>Werk uit de praktijk</h2>
+            <h2>Projecten met straatwerk, grondwerk en riolering</h2>
           </div>
           <Link className="button button-outline" href="/projecten" onNavigate={navigate}>
             Bekijk projecten
@@ -1098,7 +1099,7 @@ function ServiceArea({ places }: { places: string[] }) {
           <p className="eyebrow">Werkgebied</p>
           <h2>Actief in regio groot Rotterdam</h2>
           <p>
-            WD Infra werkt voor projecten in de onderstaande plaatsen en regio&apos;s.
+            Vanuit Alblasserdam werkt WD Infra veel in deze plaatsen en omliggende regio&apos;s.
           </p>
         </Reveal>
         <Reveal className="area-map" aria-label="Werkgebied plaatsen">
@@ -1146,8 +1147,8 @@ function ContactCta({ navigate, siteSettings }: { navigate: (href: string) => vo
           <p className="eyebrow">Contact</p>
           <h2>Een project bespreken?</h2>
           <p>
-            Bel direct of stuur een bericht. WD Infra denkt graag mee over de
-            uitvoering, planning en praktische oplossing.
+            Bel direct of stuur een bericht. WD Infra kijkt mee naar de locatie,
+            planning, bereikbaarheid en de werkzaamheden die nodig zijn.
           </p>
         </Reveal>
         <div className="button-row">
@@ -1168,18 +1169,18 @@ function ProjectsOverviewCta({ navigate, siteSettings }: { navigate: (href: stri
     <section className="section projects-overview-cta">
       <div className="container projects-overview-panel">
         <div>
-          <p className="eyebrow">Project starten</p>
-          <h2>Van buitenruimte naar uitvoerbaar plan</h2>
+          <p className="eyebrow">Project voorbereiden</p>
+          <h2>Snel duidelijkheid over planning, materieel en uitvoering</h2>
           <p>
-            Heeft u een project in bestrating, grondwerk of riolering? WD Infra
-            kijkt praktisch mee naar bereikbaarheid, planning, materieel en
-            uitvoering.
+            Heeft u straatwerk, grondwerk of rioolwerk op de planning staan?
+            WD Infra denkt mee vanaf opname tot oplevering, zodat afspraken
+            buiten ook uitvoerbaar blijven.
           </p>
         </div>
         <div className="projects-overview-actions">
           <a href={phoneHref(siteSettings.telefoonnummer)}>{siteSettings.telefoonnummer}</a>
           <Link className="button button-primary" href="/contact" onNavigate={navigate}>
-            Project bespreken
+            Werk bespreken
           </Link>
         </div>
       </div>
@@ -1193,16 +1194,16 @@ function ServicesOverviewCta({ navigate, siteSettings }: { navigate: (href: stri
       <div className="container projects-overview-panel">
         <div>
           <p className="eyebrow">Diensten bespreken</p>
-          <h2>Welke uitvoering past bij uw werk?</h2>
+          <h2>Bespreek uw straatwerk, grondwerk of rioolwerk</h2>
           <p>
-            Van straatwerk tot grondwerk en riolering: WD Infra denkt mee over
-            de juiste aanpak, capaciteit en planning voor uw project.
+            Heeft u hulp nodig bij bestrating, grondverzet of riolering? WD Infra
+            kijkt naar de locatie, de planning en het benodigde materieel.
           </p>
         </div>
         <div className="projects-overview-actions">
           <a href={phoneHref(siteSettings.telefoonnummer)}>{siteSettings.telefoonnummer}</a>
           <Link className="button button-primary" href="/contact" onNavigate={navigate}>
-            Diensten bespreken
+            Vraag advies aan
           </Link>
         </div>
       </div>
@@ -1216,17 +1217,17 @@ function ProjectContactCta({ navigate, project }: { navigate: (href: string) => 
       <div className="container project-contact-panel">
         <div>
           <p className="eyebrow">Project bespreken</p>
-          <h2>Een vergelijkbaar project aanpakken?</h2>
+          <h2>Ook straatwerk, grondwerk of riolering laten uitvoeren?</h2>
           <p>
-            WD Infra denkt mee over straatwerk, grondwerk, riolering, planning
-            en materieel. Voor een project zoals {project.title.toLowerCase()} is
-            vooral duidelijke afstemming vooraf belangrijk.
+            Voor werkzaamheden zoals {project.title.toLowerCase()} stemt WD Infra
+            vooraf de bereikbaarheid, planning, inzet van materieel en nette
+            afwerking met u af.
           </p>
         </div>
         <div className="project-contact-list">
-          <span>Praktische opname van locatie en werkzaamheden</span>
-          <span>Duidelijke planning, inzet en afspraken</span>
-          <span>Direct schakelen met WD Infra uit Alblasserdam</span>
+          <span>Opname van locatie, ondergrond en bereikbaarheid</span>
+          <span>Afspraken over planning, materieel en uitvoering</span>
+          <span>Direct schakelen met de uitvoerende ploeg</span>
           <Link className="button button-primary" href="/contact" onNavigate={navigate}>
             Bespreek uw project
           </Link>
@@ -1251,8 +1252,8 @@ function ServicesOverviewPage({
     <>
       <PageHero
         eyebrow="Diensten"
-        title="Infra werkzaamheden die overzichtelijk blijven"
-        text="WD Infra helpt met bestrating, grondwerk, riolering en verhuur. Van kleine aanpassing tot groter project."
+        title="Bestrating, grondwerk en riolering voor ieder terrein"
+        text="WD Infra voert straatwerk, grondverzet en rioolwerk uit voor aannemers, bedrijven, overheden en particulieren."
         image={pageHeroImage(siteSettings, 'diensten', '')}
         pattern="running"
       />
@@ -1325,7 +1326,7 @@ function ProjectsPage({
       <PageHero
         eyebrow="Projecten"
         title="Recent werk van WD Infra"
-        text="Een compact overzicht van projecten in bestrating, grondwerk, riolering en terreinverharding."
+        text="Bekijk hoe WD Infra straatwerk, grondwerk, riolering en terreinverharding in de praktijk uitvoert."
         image={pageHeroImage(siteSettings, 'projecten', '')}
         pattern="modular"
       />
@@ -1571,7 +1572,7 @@ function RentalPage({
       <PageHero
         eyebrow="Verhuur / Zero Emission"
         title="Materieel en ondersteuning voor uw project"
-        text="Heeft u met spoed een machine, product of extra vakmensen nodig? WD Infra denkt mee en schakelt praktisch."
+        text="Materieel, machines en vakmensen voor projecten waar tijdelijk extra capaciteit nodig is."
         image={pageHeroImage(siteSettings, 'verhuur', '')}
         pattern="basket"
       />
@@ -1580,9 +1581,9 @@ function RentalPage({
           <Reveal className="rental-intro">
             <h2>Verhuur via WD Infra</h2>
             <p>
-              Naast uitvoering biedt WD Infra de mogelijkheid om materieel,
-              machines en stratenmakerkoppels in te zetten. Handig wanneer u
-              tijdelijk capaciteit mist of het werk deels zelf wilt oppakken.
+              Naast uitvoering biedt WD Infra materieel, machines en
+              stratenmakerkoppels voor tijdelijk extra capaciteit op het werk.
+              Praktisch inzetbaar voor straatwerk, grondwerk en logistiek op de bouwplaats.
             </p>
             <Link className="button button-primary" href="/contact" onNavigate={navigate}>
               Bel of mail voor beschikbaarheid
@@ -1701,7 +1702,7 @@ function AboutPage({ navigate, siteSettings }: { navigate: (href: string) => voi
       <PageHero
         eyebrow="Over ons"
         title="Vakkundig infrabedrijf uit Alblasserdam"
-        text="WD Infra is gericht op infrastructuur, kwaliteit en vakmanschap. Persoonlijke aandacht voor ieder project staat centraal."
+        text="WD Infra voert straatwerk, grondwerk en riolering uit met vaste vakmensen, korte lijnen en aandacht voor de situatie op locatie."
         image={pageHeroImage(siteSettings, 'overOns', '')}
         pattern="running"
       />
@@ -1717,12 +1718,13 @@ function AboutPage({ navigate, siteSettings }: { navigate: (href: string) => voi
             <p>
               WD Infra is een vakkundig en ambitieus bedrijf met hoofdactiviteiten
               in bestrating, riolering, reconstructie en grondwerk. Het bedrijf
-              werkt voor zowel grote als kleinere infrastructurele projecten.
+              werkt aan terreinen, wegen, brandgangen, woonomgevingen en
+              bedrijfslocaties.
             </p>
             <p>
               Met ruim dertig vakkundige stratenmakers en grondwerkers, VCA-2
-              certificering en een instelling waarbij kwaliteit boven kwantiteit
-              staat, blijft het werk betrouwbaar en overzichtelijk.
+              certificering en korte lijnen op het werk blijft de uitvoering
+              duidelijk voor opdrachtgever, aannemer en omgeving.
             </p>
             <Link className="button button-primary" href="/projecten" onNavigate={navigate}>
               Bekijk projecten
@@ -1745,7 +1747,7 @@ function ValueSlider({ items }: { items: InfoPoint[] }) {
     <Reveal className="value-slider values-rail" aria-label="Kernwaarden van WD Infra">
       <div className="values-rail-head">
         <p className="eyebrow">Onze manier van werken</p>
-        <h2>Persoonlijk schakelen, praktisch uitvoeren</h2>
+        <h2>Vaste aanspreekpunten en korte lijnen op het werk</h2>
       </div>
       <div className="values-rail-viewport">
         <div className="values-rail-track">
@@ -1768,7 +1770,7 @@ function CareersPage({ navigate, siteSettings }: { navigate: (href: string) => v
       <PageHero
         eyebrow="Werken bij"
         title="Stratenmakers gezocht"
-        text="Ben jij gemotiveerd, flexibel en heb je affiniteit met bestrating, riolering en grondwerk? Dan past WD Infra mogelijk bij jou."
+        text="Werk mee aan straatwerk, riolering en grondwerk in de regio. WD Infra zoekt vakmensen die aanpakken en netjes werk willen leveren."
         image={pageHeroImage(siteSettings, 'werkenBij', '')}
         pattern="basket"
       />
@@ -1778,8 +1780,8 @@ function CareersPage({ navigate, siteSettings }: { navigate: (href: string) => v
             <h2>Vacature stratenmaker</h2>
             <p>
               Als stratenmaker bij WD Infra ben je voornamelijk bezig met
-              bestratingswerkzaamheden, riolering en grondwerk. Hard werken,
-              precisie en een praktische instelling zijn belangrijk.
+              bestratingswerkzaamheden, riolering en grondwerk. Je werkt buiten
+              met goed materieel, vaste collega&apos;s en projecten in de regio.
             </p>
             <Link className="button button-primary" href="/contact" onNavigate={navigate}>
               Reageer op vacature
@@ -2018,8 +2020,8 @@ function Footer({ navigate, siteSettings }: { navigate: (href: string) => void; 
         <div>
           <img className="footer-logo" src={logoAsset('footer', 'WD-infra-enkel-logo-lang.svg')} alt="WD Infra B.V." />
           <p>
-            Praktisch infra werk voor bestrating, grondwerk, riolering en
-            verhuur vanuit Alblasserdam.
+            Bestrating, grondwerk, riolering en verhuur voor aannemers,
+            bedrijven, overheden en particulieren.
           </p>
         </div>
         <nav className="footer-nav" aria-label="Footernavigatie">

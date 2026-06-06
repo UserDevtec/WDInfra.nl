@@ -472,7 +472,7 @@
       "slug": "bestrating",
       "title": "Bestrating",
       "name": "Straatwerk",
-      "intro": "Voor straatwerk, terreinverharding, herbestrating en nette afwerking van buitenruimtes.",
+      "intro": "Straatwerk, terreinverharding en herbestrating voor woonstraten, bedrijfsterreinen en buitenruimtes.",
       "image": "/assets/dienst-bestrating.jpeg",
       "label": "Straatwerk",
       "bullets": [
@@ -481,14 +481,14 @@
         "Industrieterreinen en gemeentelijk straatwerk",
         "Herbestrating en afwerking rond bedrijfspanden en woongebieden"
       ],
-      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "fullText": "WD Infra verzorgt bestrating voor woonomgevingen, bedrijfsterreinen, parkeerplaatsen, brandgangen en openbare ruimte. De ploeg let op maatvoering, afwatering, bereikbaarheid en een nette afwerking.",
       "projectTag": "bestrating"
     },
     {
       "slug": "grondwerk",
       "title": "Grondwerk",
       "name": "Voorbereiding",
-      "intro": "Ontgraven, afvoeren, verwerken en voorbereiden van grond voor uiteenlopende infra- en bouwprojecten.",
+      "intro": "Ontgraven, aanvullen, egaliseren en voorbereiden van terreinen voor bouw, straatwerk en riolering.",
       "image": "/assets/dienst-grondwerk.jpg",
       "label": "Voorbereiding",
       "bullets": [
@@ -497,14 +497,14 @@
         "Slopen en verwijderen van oude bestratingen of grondwerken",
         "Kabel- en leidingstroken aanleggen en terreinen egaliseren"
       ],
-      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "fullText": "Bij grondwerk zorgt WD Infra voor een goede voorbereiding van het terrein. Denk aan ontgraven, grondverbetering, cunetten, ophogingen, kabel- en leidingstroken en het klaarzetten van de onderbaan voor verdere uitvoering.",
       "projectTag": "grondwerk"
     },
     {
       "slug": "riolering",
       "title": "Riolering",
       "name": "Aanleg en herstel",
-      "intro": "Standaard rioolwerkzaamheden en maatwerkoplossingen voor aanleg, herstel en aanpassing.",
+      "intro": "Aanleg, herstel en aanpassing van riolering, hemelwaterafvoer, kolken en drainage.",
       "image": "/assets/dienst-riolering.jpg",
       "label": "Aanleg en herstel",
       "bullets": [
@@ -513,7 +513,7 @@
         "Vernieuwing, reparatie of gedeeltelijke vervanging",
         "Uitbreiding, verlegging en aanleg van drainage"
       ],
-      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "fullText": "WD Infra voert rioolwerk uit bij nieuwe aanleg, herstel en aanpassing van bestaande situaties. De werkzaamheden worden afgestemd op afwatering, bereikbaarheid en de aansluiting op het omliggende straat- en grondwerk.",
       "projectTag": "riolering"
     }
   ],
