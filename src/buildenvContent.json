@@ -1,0 +1,578 @@
+{
+  "source": "https://buildenv-pb9m7ykb4g.live-website.com",
+  "siteSettings": {
+    "telefoonnummer": "06-22505618",
+    "email": "info@wdinfra.nl",
+    "adres": "West Kinderdijk 122F",
+    "postcode": "2953 XW",
+    "plaats": "Alblasserdam",
+    "contactFormHtml": "<div class=\"jet-form-block\"data-is-block=\"jet-engine/booking-form\"><form  class=\"jet-form layout-row submit-type-reload\" action=\"/wp-json/wd-infra/v1/site-settings?jet_engine_action=book&#038;nocache=1780726763\" method=\"POST\" data-form-id=\"103\"><div class=\"jet-form-col__end content-fullwidth\"><input class=\"jet-form__field hidden-field\" type=\"hidden\" name=\"_jet_engine_booking_form_id\" value=\"103\" data-field-name=\"_jet_engine_booking_form_id\"></div><div class=\"jet-form-col__end content-fullwidth\"><input class=\"jet-form__field hidden-field\" type=\"hidden\" name=\"_jet_engine_refer\" value=\"https://buildenv-pb9m7ykb4g.live-website.com/wp-json/wd-infra/v1/site-settings\" data-field-name=\"_jet_engine_refer\"></div><div  class=\"jet-form-row jet-form-row--hidden\"><div class=\"jet-form-col jet-form-col-12  field-type-hidden  jet-form-field-container\" data-field=\"post_id\" data-conditional=\"false\"><div class=\"jet-form-col__end content-fullwidth\"><input class=\"jet-form__field hidden-field\" type=\"hidden\" name=\"post_id\" value=\"\" data-field-name=\"post_id\"></div></div></div><div  class=\"jet-form-row jet-form-row--first-visible\"><div class=\"jet-form-col jet-form-col-12  field-type-text  jet-form-field-container\" data-field=\"naam_value\" data-conditional=\"false\"><div class=\"jet-form-col__start\"><div class=\"jet-form__label\">\n\t<span class=\"jet-form__label-text\" >Naam<span class=\"jet-form__required\">*</span></span>\n\t</div></div>\n<div class=\"jet-form-col__end\"><input class=\"jet-form__field text-field \" value=\"\" required=\"required\" name=\"naam_value\" id=\"naam_value\" type=\"text\" data-field-name=\"naam_value\"></div></div></div><div  class=\"jet-form-row\"><div class=\"jet-form-col jet-form-col-12  field-type-text  jet-form-field-container\" data-field=\"email_value\" data-conditional=\"false\"><div class=\"jet-form-col__start\"><div class=\"jet-form__label\">\n\t<span class=\"jet-form__label-text\" >E-mail<span class=\"jet-form__required\">*</span></span>\n\t</div></div>\n<div class=\"jet-form-col__end\"><input class=\"jet-form__field text-field \" value=\"\" required=\"required\" name=\"email_value\" id=\"email_value\" type=\"email\" data-field-name=\"email_value\"></div></div></div><div  class=\"jet-form-row\"><div class=\"jet-form-col jet-form-col-12  field-type-text  jet-form-field-container\" data-field=\"onderwerp_value\" data-conditional=\"false\"><div class=\"jet-form-col__start\"><div class=\"jet-form__label\">\n\t<span class=\"jet-form__label-text\" >Onderwerp<span class=\"jet-form__required\">*</span></span>\n\t</div></div>\n<div class=\"jet-form-col__end\"><input class=\"jet-form__field text-field \" value=\"\" required=\"required\" name=\"onderwerp_value\" id=\"onderwerp_value\" type=\"text\" data-field-name=\"onderwerp_value\"></div></div></div><div  class=\"jet-form-row\"><div class=\"jet-form-col jet-form-col-12  field-type-textarea  jet-form-field-container\" data-field=\"bericht_value\" data-conditional=\"false\"><div class=\"jet-form-col__start\"><div class=\"jet-form__label\">\n\t<span class=\"jet-form__label-text\" >Bericht</span>\n\t</div></div>\n<div class=\"jet-form-col__end\"><textarea class=\"jet-form__field textarea-field\" name=\"bericht_value\" data-field-name=\"bericht_value\" id=\"bericht_value\"></textarea></div></div></div><div  class=\"jet-form-row jet-form-row--submit\"><div class=\"jet-form-col jet-form-col-12  field-type-submit  jet-form-field-container\" data-field=\"Submit\" data-conditional=\"false\"><div class=\"jet-form-col__end content-fullwidth\"><div class=\"jet-form__submit-wrap\">\n\t\t<button class=\"jet-form__submit submit-type-reload\" type=\"submit\">Verstuur bericht</button>\n</div></div></div></div><div class=\"jet-form-col__end content-fullwidth\"><input class=\"jet-form__field hidden-field\" type=\"hidden\" name=\"_jet_engine_nonce\" value=\"928fbbadd1\" data-field-name=\"_jet_engine_nonce\"></div></form></div>",
+    "heroImages": {
+      "diensten": "/assets/hero-diensten.jpg",
+      "projecten": "/assets/hero-projecten.jpg",
+      "verhuur": "/assets/hero-verhuur.jpg",
+      "overOns": "/assets/hero-over-ons.jpeg",
+      "werkenBij": "/assets/hero-werken-bij.jpeg",
+      "contact": "/assets/hero-contact.jpg"
+    },
+    "galleries": {
+      "home": [
+        "/assets/home-hero-slide-1.jpeg",
+        "/assets/hero-projecten.jpg",
+        "/assets/home-hero-slide-3.jpeg",
+        "/assets/hero-werken-bij.jpeg",
+        "/assets/home-hero-slide-5.jpg"
+      ],
+      "werkenBij": [
+        "/assets/werken-bij-gallery-1.jpg",
+        "/assets/hero-over-ons.jpeg"
+      ]
+    },
+    "careers": {
+      "wijZoeken": [
+        "Gemotiveerd, enthousiast en affiniteit met de werkzaamheden.",
+        "Flexibel in werktijden en werkzaamheden.",
+        "Aanpakmentaliteit en ambitie om door te groeien.",
+        "Bij voorkeur rijbewijs BE en VCA basis."
+      ],
+      "wijBieden": [
+        "Arbeidsvoorwaarden conform FNV Bouw CAO.",
+        "Afwisselend werk binnen een praktisch en dynamisch bedrijf.",
+        "Mogelijkheden tot het volgen van een opleiding."
+      ]
+    },
+    "kernpuntenHome": [
+      {
+        "title": "25+ jaar",
+        "text": "ervaring in infrastructuur"
+      },
+      {
+        "title": "30+ vakmensen",
+        "text": "stratenmakers en grondwerkers"
+      },
+      {
+        "title": "VCA-2",
+        "text": "aandacht voor veilig werken"
+      },
+      {
+        "title": "Regio Rotterdam",
+        "text": "actief vanuit Alblasserdam"
+      }
+    ],
+    "werkgebied": [
+      "Alblasserdam",
+      "Rotterdam",
+      "Capelle aan den IJssel",
+      "Krimpen aan den IJssel",
+      "Gouda",
+      "Barendrecht",
+      "Ridderkerk",
+      "Hendrik Ido Ambacht",
+      "Zwijndrecht",
+      "Den Haag",
+      "Delft",
+      "Rijswijk",
+      "Schiedam",
+      "Vlaardingen",
+      "Spijkenisse",
+      "Dordrecht",
+      "Papendrecht",
+      "Sliedrecht",
+      "Moordrecht",
+      "Poeldijk",
+      "Beuningen"
+    ],
+    "kernpuntenOverOns": [
+      {
+        "title": "Korte lijnen",
+        "text": "Snel schakelen en duidelijke afspraken."
+      },
+      {
+        "title": "Flexibel",
+        "text": "Meedenken in planning, uitvoering en praktische oplossingen."
+      },
+      {
+        "title": "Persoonlijk",
+        "text": "Direct contact en aandacht voor elk project."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "slug": "aanleg-bedrijventerrein-kleine-esch",
+      "title": "Aanleg bedrijventerrein Kleine Esch",
+      "place": "Moordrecht",
+      "text": "In Moordrecht werken we aan de herinrichting van een industrieterrein. De rijwegen, looppaden en groenstroken worden gereconstrueerd en opnieuw ingericht.",
+      "image": "/assets/home-hero-slide-3.jpeg",
+      "intro": "Voor een industrieterrein in Moordrecht voeren we werkzaamheden uit aan de bestaande buitenruimte. De rijwegen en groenstroken worden gereconstrueerd, zodat het terrein weer netjes, functioneel en toekomstbestendig wordt ingericht.\nBinnen het project worden onder andere gootlagen, banden en looppaden aangebracht. Ook de groenstroken worden meegenomen in de nieuwe inrichting. Zo ontstaat een verzorgde en praktische omgeving voor dagelijks gebruik door bedrijven, bezoekers en verkeer.",
+      "details": [
+        "Gootlagen",
+        "Banden",
+        "Looppaden",
+        "Groenstroken"
+      ],
+      "gallery": [
+        "/assets/home-hero-slide-3.jpeg",
+        "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-2.png",
+        "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-3.png",
+        "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-4.png"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/home-hero-slide-3.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-2.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-3.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-bedrijventerrein-kleine-esch-foto-4.png",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating",
+        "grondwerk"
+      ],
+      "date": "2026-04-27T14:29:44+02:00"
+    },
+    {
+      "slug": "bestrating-woonwijk-rijswijk",
+      "title": "Bestrating woonwijk Rijswijk",
+      "place": "Rijswijk",
+      "text": "Voor Rijswijk Wonen zijn diverse bestratingswerkzaamheden uitgevoerd rondom de woonlocatie. Bestaande verharding is aangepast, straatwerk is hersteld en nieuwe bestrating is aangebracht om de omgeving netjes en goed bereikbaar op te leveren.",
+      "image": "/assets/home-hero-slide-5.jpg",
+      "intro": "Voor het project Rijswijk Wonen zijn werkzaamheden uitgevoerd aan de buitenruimte rondom de woonlocatie. Hierbij is bestaande bestrating verwijderd, opnieuw aangebracht en waar nodig aangepast aan de nieuwe situatie. Ook zijn trottoirs, rijbanen en aansluitingen rondom de woningen netjes afgewerkt.\nTijdens de uitvoering is rekening gehouden met bereikbaarheid, veiligheid en een verzorgde oplevering van het terrein. Door de combinatie van grondwerk, straatwerk en het herstellen van verhardingen is de omgeving weer praktisch bruikbaar en passend ingericht voor dagelijks gebruik.",
+      "details": [
+        "Verwijderen en opnieuw aanbrengen van bestrating",
+        "Aanpassen van verhardingen aan de nieuwe situatie",
+        "Afwerken van trottoirs, rijbanen en aansluitingen",
+        "Uitvoeren van grondwerk en nette oplevering van de buitenruimte"
+      ],
+      "gallery": [
+        "/assets/home-hero-slide-5.jpg",
+        "/assets/project-bestrating-woonwijk-rijswijk-foto-2.png",
+        "/assets/project-bestrating-woonwijk-rijswijk-foto-3.png",
+        "/assets/project-bestrating-woonwijk-rijswijk-foto-4.png",
+        "/assets/project-bestrating-woonwijk-rijswijk-foto-5.png"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/home-hero-slide-5.jpg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestrating-woonwijk-rijswijk-foto-2.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestrating-woonwijk-rijswijk-foto-3.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestrating-woonwijk-rijswijk-foto-4.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestrating-woonwijk-rijswijk-foto-5.png",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating",
+        "grondwerk"
+      ],
+      "date": "2026-04-27T14:06:26+02:00"
+    },
+    {
+      "slug": "uitbreiding-bedrijfslocatie-de-vries-verburg",
+      "title": "Uitbreiding bedrijfslocatie de Vries en Verburg",
+      "place": "Stellendam",
+      "text": "Ter uitbreiding van het pand is de bestaande verharding aangepast. De laadkuil en de verhardingen rondom het pand. In Stellendam.",
+      "image": "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-cover.png",
+      "intro": "Ter uitbreiding van het pand is de bestaande verharding aangepast. De laadkuil en de verhardingen rondom het pand. In Stellendam.\nAsfalteringswerkzaamheden en een toegangsweg bestraat, grindstroken aangebracht\nIn verband met de uitbreiding verleggen van rioleringsbuizen.",
+      "details": [
+        "Aanpassen van bestaande verharding rondom het pand",
+        "Bestraten van de toegangsweg en laadkuil",
+        "Uitvoeren van asfalteringswerkzaamheden",
+        "Aanbrengen van grindstroken en verleggen van rioleringsbuizen"
+      ],
+      "gallery": [
+        "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-cover.png",
+        "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-foto-2.png",
+        "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-foto-3.png"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-cover.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-foto-2.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-uitbreiding-bedrijfslocatie-de-vries-verburg-foto-3.png",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating"
+      ],
+      "date": "2026-04-27T14:03:38+02:00"
+    },
+    {
+      "slug": "smartlog-voor-bam-infra",
+      "title": "Smartlog voor BAM infra",
+      "place": "Rotterdam",
+      "text": "Aan de Wolgaweg in Rotterdam is een terrein met logistieke bestemming uitgebreid. Hiervoor is circa 5.000 meter aan H-profiel stenen aangebracht en zijn banden gezet voor een nette en stevige afwerking.",
+      "image": "/assets/project-smartlog-voor-bam-infra-cover.png",
+      "intro": "Aan de Wolgaweg in Rotterdam zijn werkzaamheden uitgevoerd voor de uitbreiding van een terrein met logistieke bestemming. Hierbij is circa 5.000 meter aan H-profiel stenen aangebracht en zijn nieuwe banden gezet voor een strakke en stevige terreinafwerking.\nVoor een efficiënte uitvoering is het straatwerk machinaal aangebracht met een Volvo kraan en stenenklem. Met deze methode kon per keer ongeveer 1 m² bestrating worden gelegd. Daarnaast is een PP-machine ingezet voor het profileren van de onderbaan. De werkzaamheden zijn binnen één week uitgevoerd en netjes opgeleverd.",
+      "details": [
+        "Aanbrengen van circa 5.000 meter H-profiel stenen",
+        "Zetten van banden voor de terreinafwerking",
+        "Profileren van de onderbaan met PP-machine",
+        "Machinaal bestraten met Volvo kraan en stenenklem"
+      ],
+      "gallery": [
+        "/assets/project-smartlog-voor-bam-infra-cover.png",
+        "/assets/project-smartlog-voor-bam-infra-foto-2.png",
+        "/assets/project-smartlog-voor-bam-infra-foto-3.png",
+        "/assets/project-smartlog-voor-bam-infra-foto-4.png"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/project-smartlog-voor-bam-infra-cover.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-smartlog-voor-bam-infra-foto-2.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-smartlog-voor-bam-infra-foto-3.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-smartlog-voor-bam-infra-foto-4.png",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating"
+      ],
+      "date": "2026-04-27T14:01:32+02:00"
+    },
+    {
+      "slug": "woonkracht10-brandgangen",
+      "title": "Woonkracht10 brandgangen",
+      "place": "Papendrecht",
+      "text": "IT diameter 315, figureert als buffer met een overstort erop aangesloten en desnoods lozen we op het riool. Het doel van het systeem is om hemelwater terug te brengen in de grond.",
+      "image": "/assets/project-woonkracht10-brandgangen-cover.png",
+      "intro": "IT diameter 315, figureert als buffer met een overstort erop aangesloten en desnoods lozen we op het riool. Het doel van het systeem is om hemelwater terug te brengen in de grond.\nZoveel mogelijk recycling laten plaatsvinden zonder dat er water wordt afgevoerd naar de waterzuivering.",
+      "details": [
+        "Aanbrengen van infiltratieleiding diameter 315",
+        "Realiseren van een buffer voor hemelwater",
+        "Aansluiten van een overstort op het systeem"
+      ],
+      "gallery": [
+        "/assets/project-woonkracht10-brandgangen-cover.png",
+        "/assets/project-woonkracht10-brandgangen-foto-2.png",
+        "/assets/project-woonkracht10-brandgangen-foto-3.png",
+        "/assets/project-woonkracht10-brandgangen-foto-4.png",
+        "/assets/project-woonkracht10-brandgangen-foto-5.png",
+        "/assets/project-woonkracht10-brandgangen-foto-6.png"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-cover.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-foto-2.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-foto-3.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-foto-4.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-foto-5.png",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-woonkracht10-brandgangen-foto-6.png",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating",
+        "grondwerk",
+        "riolering"
+      ],
+      "date": "2026-04-27T13:40:58+02:00"
+    },
+    {
+      "slug": "aanleg-rotonde",
+      "title": "Aanleg rotonde Beuningen",
+      "place": "Beuningen",
+      "text": "Aanleg van een rotonde op de Houtduiflaan – Burgemeester Gerardtslaan in Beuningen.",
+      "image": "/assets/hero-werken-bij.jpeg",
+      "intro": "Aanleg van een rotonde op de Houtduiflaan – Burgemeester Gerardtslaan in Beuningen.\nWij treffen voorbereidingen voor het asfalt en gaan bezig met de aanleg van enkele verhoogde oversteekplaatsen. Ook leggen we vrijliggende fietspaden aan met een goede aansluiting op de snelfietsroute naar Nijmegen.",
+      "details": [
+        "Voorbereiden van de onderbaan voor asfaltwerk",
+        "Realiseren van verhoogde oversteekplaatsen"
+      ],
+      "gallery": [
+        "/assets/hero-werken-bij.jpeg",
+        "/assets/project-aanleg-rotonde-foto-2.jpeg",
+        "/assets/project-aanleg-rotonde-foto-3.jpeg",
+        "/assets/project-aanleg-rotonde-foto-4.jpeg",
+        "/assets/project-aanleg-rotonde-foto-5.jpeg"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/hero-werken-bij.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-rotonde-foto-2.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-rotonde-foto-3.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-rotonde-foto-4.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-aanleg-rotonde-foto-5.jpeg",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating",
+        "grondwerk"
+      ],
+      "date": "2026-04-27T13:23:52+02:00"
+    },
+    {
+      "slug": "bestratings-werkzaamheden-mient",
+      "title": "Bestratings werkzaamheden Mient",
+      "place": "Den Haag",
+      "text": "Op de Mient in Den Haag voeren wij in opdracht van BAM Infra Nederland diverse bestratingswerkzaamheden uit. Hierbij worden de inrit naar het parkeerterrein en de parkeerplekken met grasbeton opnieuw aangelegd.",
+      "image": "/assets/project-bestratings-werkzaamheden-mient-cover.jpeg",
+      "intro": "In opdracht van BAM Infra Nederland voeren wij op de Mient in Den Haag diverse bestratingswerkzaamheden uit binnen het Groot Asfaltonderhoud contract. De werkzaamheden bestaan onder andere uit het vernieuwen van de inrit naar het parkeerterrein en het opnieuw aanleggen van de parkeerplekken.\nDe parkeerplaatsen worden uitgevoerd met grasbeton. Deze klimaatadaptieve oplossing zorgt ervoor dat oppervlaktewater beter in de bodem kan worden opgenomen. Daarnaast draagt het bij aan een betere bewatering van de bestaande bomen en een groenere inrichting van het terrein.",
+      "details": [
+        "Herbestrating en afwerking van bestaande buitenruimte.",
+        "Werken met oog voor bereikbaarheid en omgevingshinder.",
+        "Strakke eindafwerking voor dagelijks gebruik."
+      ],
+      "gallery": [
+        "/assets/project-bestratings-werkzaamheden-mient-cover.jpeg",
+        "/assets/project-bestratings-werkzaamheden-mient-foto-2.jpeg",
+        "/assets/project-bestratings-werkzaamheden-mient-foto-3.jpeg"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/project-bestratings-werkzaamheden-mient-cover.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestratings-werkzaamheden-mient-foto-2.jpeg",
+          "poster": ""
+        },
+        {
+          "type": "image",
+          "url": "/assets/project-bestratings-werkzaamheden-mient-foto-3.jpeg",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating"
+      ],
+      "date": "2026-04-26T20:01:42+02:00"
+    },
+    {
+      "slug": "aanleg-geluidswal-poeldijk",
+      "title": "Aanleg geluidswal Poeldijk",
+      "place": "Poeldijk",
+      "text": "Voor dit project werkte WD Infra aan de aanleg van een geluidswal, met aandacht voor grondverwerking, bereikbaarheid en nette afwerking.",
+      "image": "/assets/hero-projecten.jpg",
+      "intro": "Voor dit project werkte WD Infra aan de aanleg van een geluidswal, met aandacht voor grondverwerking, bereikbaarheid en nette afwerking.\nElk project vraagt om een praktische afstemming tussen planning, materieel, bereikbaarheid en nette afwerking. Op deze pagina is ruimte voor extra projectinformatie, foto's van de uitvoering en toelichting op de werkzaamheden.",
+      "details": [
+        "Voorbereidend grondwerk en profilering van het werkgebied.",
+        "Afstemming met betrokken partijen over planning en logistiek.",
+        "Nette oplevering van de buitenruimte rondom de geluidswal."
+      ],
+      "gallery": [
+        "/assets/hero-projecten.jpg"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "/assets/hero-projecten.jpg",
+          "poster": ""
+        },
+        {
+          "type": "video",
+          "url": "/assets/project-aanleg-geluidswal-poeldijk-video-2.mp4",
+          "poster": ""
+        }
+      ],
+      "serviceTags": [
+        "bestrating",
+        "grondwerk"
+      ],
+      "date": "2026-04-26T19:57:05+02:00"
+    }
+  ],
+  "services": [
+    {
+      "slug": "bestrating",
+      "title": "Bestrating",
+      "name": "Straatwerk",
+      "intro": "Voor straatwerk, terreinverharding, herbestrating en nette afwerking van buitenruimtes.",
+      "image": "/assets/dienst-bestrating.jpeg",
+      "label": "Straatwerk",
+      "bullets": [
+        "Sierbestrating en ambachtelijk handmatig straatwerk",
+        "Machinaal bestraten voor grotere oppervlakken",
+        "Industrieterreinen en gemeentelijk straatwerk",
+        "Herbestrating en afwerking rond bedrijfspanden en woongebieden"
+      ],
+      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "projectTag": "bestrating"
+    },
+    {
+      "slug": "grondwerk",
+      "title": "Grondwerk",
+      "name": "Voorbereiding",
+      "intro": "Ontgraven, afvoeren, verwerken en voorbereiden van grond voor uiteenlopende infra- en bouwprojecten.",
+      "image": "/assets/dienst-grondwerk.jpg",
+      "label": "Voorbereiding",
+      "bullets": [
+        "Grondophoging en grondverbetering",
+        "Ontgraven van bouwputten en cunetten",
+        "Slopen en verwijderen van oude bestratingen of grondwerken",
+        "Kabel- en leidingstroken aanleggen en terreinen egaliseren"
+      ],
+      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "projectTag": "grondwerk"
+    },
+    {
+      "slug": "riolering",
+      "title": "Riolering",
+      "name": "Aanleg en herstel",
+      "intro": "Standaard rioolwerkzaamheden en maatwerkoplossingen voor aanleg, herstel en aanpassing.",
+      "image": "/assets/dienst-riolering.jpg",
+      "label": "Aanleg en herstel",
+      "bullets": [
+        "Aanleg van hemelwaterafvoer, kolken en leidingen",
+        "Aanleg van hoofdrioleringen",
+        "Vernieuwing, reparatie of gedeeltelijke vervanging",
+        "Uitbreiding, verlegging en aanleg van drainage"
+      ],
+      "fullText": "WD Infra werkt voor hoofdaannemers, projectontwikkelaars, woningbouwbedrijven, overheidsinstellingen, bedrijven en particulieren. De uitvoering is praktisch, veilig en gericht op een nette oplevering.",
+      "projectTag": "riolering"
+    }
+  ],
+  "rentals": [
+    {
+      "slug": "knikmops-90-100-130-130e-relly-1-3e",
+      "title": "Knikmops 90 / 100 / 130 / 130E / Relly #1.3E",
+      "text": "De Knikmops is een bekende minishovel voor de straatmaker, hovenier en boerderijen. Het is een krachtige, veelzijdige en compacte minishovel die geschikt is voor diensten op vele vlakken en voor verschillende doelen. De Knikmops beschikt over een hoge snelheid en uiterste wendbaarheid en is daarmee geschikt voor allerlei soorten terreinen.\nBij de Knikmops is er een breed assortiment aan hulpstukken beschikbaar. Er is eventueel ook een machinale bestratingsklem te huur voor machinale bestratingswerkzaamheden\nKnikmops wordt verhuurd inclusief benodigde hulpstukken. \nU heeft keuze uit knikmops 90, 100 of 130. Dit is naar gelang van uw project.",
+      "image": "/assets/verhuur-knikmops-90-100-130-130e-relly-1-3e.png",
+      "order": 1
+    },
+    {
+      "slug": "giant-shovel",
+      "title": "Giant Shovel",
+      "text": "Wij hebben verschillende Giant’s beschikbaar. /Zo hebben wij bijvoorbeeld een ‘kleine’ 332 X-TRA, een V452T X-TRA HD of een V5004 X-TRA voor het grotere werk.\nDe X-TRA staat voor extra hoge kiplast dankzij het  verlaagde voorframe. Hierdoor zijn de Giant’s zwaarder te belasten.\nGiant wordt verhuurd inclusief benodigde hulpstukken.",
+      "image": "/assets/verhuur-giant-shovel.jpg",
+      "order": 2
+    },
+    {
+      "slug": "wacker-neuson-ez17",
+      "title": "Mini graver tot 2 ton",
+      "text": "De EZ17 is een compacte graafmachine, die elke nauwkeurige klus makkelijk maakt. Door zijn compactheid is het makkelijk opereren in een nauwe omgevingen. De EZ17 garandeert het perfecte 360-zicht – omhoog en omlaag – en biedt een extreem groot gezichtsveld.\n\n\n\nGewicht:\n1725 KG\n\n\nLengte:\n358,5 cm\n\n\nBreedte:\n99 cm\n\n\nHoogte:\n236 cm\n\n\nGraafdiepte:\n230 cm\n\n\nGraafstraal:\n390 cm\n\n\nVermogen\n13,4 kW\n\n\nSnelheid:\n4,8 km/h\n\n\nAantal cilinders:\n3",
+      "image": "/assets/verhuur-wacker-neuson-ez17.jpg",
+      "order": 3
+    },
+    {
+      "slug": "takeuchi-tb23r",
+      "title": "Takeuchi TB23R",
+      "text": "De Takeuchi is een slag groter dan de Wacker Neuson EZ17. Bij grotere projecten biedt deze graafmachine net meer uitkomst. De kraan met rupsbanden is nog steeds ideaal voor gebruik bij werkzaamheden met nauwe doorgangen. Ondanks het kleinere formaat is de kraan toch in staat zware lasten te tillen.\nVerder heeft de Takeuchi een vacuümopbouw waarmee het mogelijk is om eenvoudig zware lasten te tillen. Denk hierbij aan het optillen van trottoirbanden en het optillen en parketteren van trottoirtegels.\n\n\n\nGewicht:\n3.530 KG\n\n\nLengte:\n494,5 cm\n\n\nBreedte:\n163 cm\n\n\nHoogte:\n245 cm\n\n\nGraafdiepte:\n310,5 cm\n\n\nVermogen:\n27,3 pk\n\n\nSnelheid:\n4,8 km/h",
+      "image": "/assets/dienst-riolering.jpg",
+      "order": 4
+    },
+    {
+      "slug": "etec-806-ii",
+      "title": "Etec 806-II",
+      "text": "De Etec 814-II is de kraan voor het grotere werk. De kraan heeft een gewicht rond de 6ton en heeft een vermogen van 55 pk. Met een opbreekkracht van 39 kN en een reikwijdte van meer dan 5 meter is deze machine uitermate geschikt voor de grotere projecten. De kraan staat op 4 brede banden en is uitgerust met een snel-wisselsysteem.\nDe Etec kan geleverd worden met diverse hulpstukken",
+      "image": "/assets/verhuur-etec-806-ii.png",
+      "order": 5
+    },
+    {
+      "slug": "tiger-stone",
+      "title": "Tiger-Stone",
+      "text": "De Tiger-Stone, een zes meter brede bestratingsmachine, is in staat om in één keer een straat of weg te bestraten. Hierbij verzorgt de Tiger-Stone ook gelijk de randafwerking. De stenen liggen meteen strak opgesloten tussen de trottoirbanden en dat zonder afval en puin op de weg. Het is ook mogelijk om de breedte van de Tiger-Stone in te stellen.\nEen aantal van de vele voordelen van de Tiger-Stone:\n\nVerbeterde arbeidsomstandigheden\nHoge dagproductie\nHoge kwaliteit van gelegd werk\nDoor randafwerking geen knipwerk\nEenvoudige bediening\nLage onderhoudskosten",
+      "image": "/assets/verhuur-tiger-stone.png",
+      "order": 6
+    },
+    {
+      "slug": "be-combinatie",
+      "title": "BE-Combinatie",
+      "text": "Is het nodig om machines of andere zware lasten te vervoeren en heeft u hierbij behoefte aan een aanhanger van formaat ? Bij WD Infra kunt u een BE-combinatie huren voor uw werkzaamheden of het verplaatsen van bijvoorbeeld shovels of kranen.\nDe aanhanger is een Veldhuizen P37-10 en heeft een leeggewicht van 2.820 kg. Het laadvermogen is 10.180 kg met een maximale toegestane massa van 13.000 kg.\nBestuurder moet in het bezit zijn van BE-rijbewijs.",
+      "image": "/assets/verhuur-be-combinatie.jpeg",
+      "order": 7
+    },
+    {
+      "slug": "koppel-stratenmakers",
+      "title": "Koppel Stratenmakers",
+      "text": "Heeft u (tijdelijk) behoefte aan extra mankracht? Via WD Infra kunt u ten alle tijden ervaren koppels stratenmakers en grondwerkers inhuren. Deze koppels zijn in het bezit van alle benodigheden om de werkzaamheden te verrichten. Naast alle gereedschappen en materialen, zijn de koppels ook VCA-gecertificeerd.\nDe stratenmakers en grondwerkers zijn extreem gemotiveerde vakmensen. Met jarenlange ervaring is dit het perfecte personeel voor elke klus in de bestratingen en grondwerkzaamheden. De geleverde koppels zijn ten alle tijden beschikbaar met al het gereedschap dat nodig is om het project succesvol tot een einde te brengen.",
+      "image": "/assets/verhuur-koppel-stratenmakers.png",
+      "order": 8
+    }
+  ]
+}

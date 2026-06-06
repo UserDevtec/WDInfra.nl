@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import type { CSSProperties, HTMLAttributes, ReactNode } from 'react';
 import { inlineSvgData } from './inlineSvgData';
+import buildenvContent from './buildenvContent.json';
 import './styles.css';
 
 declare global {
@@ -86,6 +87,10 @@ const defaultSiteSettings: SiteSettings = {
   kernpuntenOverOns: [],
 };
 
+function hasWordPressRestBase() {
+  return typeof window !== 'undefined' && Boolean(window.WD_INFRA_REST_BASE);
+}
+
 function phoneHref(phone: string) {
   if (!phone.trim()) return '#';
   const normalized = phone.replace(/^0/, '+31').replace(/[^\d+]/g, '');
@@ -105,12 +110,18 @@ function mapsEmbedUrl(settings: SiteSettings) {
 }
 
 function useSiteSettings() {
-  const [settings, setSettings] = useState<SiteSettings>(defaultSiteSettings);
-  const [settingsLoaded, setSettingsLoaded] = useState(false);
+  const [settings, setSettings] = useState<SiteSettings>(hasWordPressRestBase() ? defaultSiteSettings : buildenvSiteSettings);
+  const [settingsLoaded, setSettingsLoaded] = useState(!hasWordPressRestBase());
 
   useEffect(() => {
+    if (!hasWordPressRestBase()) {
+      setSettings(buildenvSiteSettings);
+      setSettingsLoaded(true);
+      return;
+    }
+
     const controller = new AbortController();
-    const restBase = window.WD_INFRA_REST_BASE || '/wp-json/wd-infra/v1/';
+    const restBase = window.WD_INFRA_REST_BASE || '';
 
     fetch(`${restBase}site-settings`, {
       credentials: 'same-origin',
@@ -165,13 +176,23 @@ function pageHeroImage(settings: SiteSettings, key: keyof HeroImages, fallback: 
   return settings.heroImages[key] || fallback;
 }
 
+function normalizeImageSlides(images: string[]) {
+  return Array.from(new Set(images.filter((image) => typeof image === 'string' && image.trim() !== '')));
+}
+
 function useProjects() {
-  const [items, setItems] = useState<Project[]>([]);
-  const [loaded, setLoaded] = useState(false);
+  const [items, setItems] = useState<Project[]>(hasWordPressRestBase() ? [] : buildenvProjects);
+  const [loaded, setLoaded] = useState(!hasWordPressRestBase());
 
   useEffect(() => {
+    if (!hasWordPressRestBase()) {
+      setItems(buildenvProjects);
+      setLoaded(true);
+      return;
+    }
+
     const controller = new AbortController();
-    const restBase = window.WD_INFRA_REST_BASE || '/wp-json/wd-infra/v1/';
+    const restBase = window.WD_INFRA_REST_BASE || '';
 
     fetch(`${restBase}projects`, {
       credentials: 'same-origin',
@@ -195,12 +216,18 @@ function useProjects() {
 }
 
 function useServices() {
-  const [items, setItems] = useState<Service[]>([]);
-  const [loaded, setLoaded] = useState(false);
+  const [items, setItems] = useState<Service[]>(hasWordPressRestBase() ? [] : buildenvServices);
+  const [loaded, setLoaded] = useState(!hasWordPressRestBase());
 
   useEffect(() => {
+    if (!hasWordPressRestBase()) {
+      setItems(buildenvServices);
+      setLoaded(true);
+      return;
+    }
+
     const controller = new AbortController();
-    const restBase = window.WD_INFRA_REST_BASE || '/wp-json/wd-infra/v1/';
+    const restBase = window.WD_INFRA_REST_BASE || '';
 
     fetch(`${restBase}services`, {
       credentials: 'same-origin',
@@ -224,12 +251,18 @@ function useServices() {
 }
 
 function useRentals() {
-  const [items, setItems] = useState<RentalItem[]>([]);
-  const [loaded, setLoaded] = useState(false);
+  const [items, setItems] = useState<RentalItem[]>(hasWordPressRestBase() ? [] : buildenvRentals);
+  const [loaded, setLoaded] = useState(!hasWordPressRestBase());
 
   useEffect(() => {
+    if (!hasWordPressRestBase()) {
+      setItems(buildenvRentals);
+      setLoaded(true);
+      return;
+    }
+
     const controller = new AbortController();
-    const restBase = window.WD_INFRA_REST_BASE || '/wp-json/wd-infra/v1/';
+    const restBase = window.WD_INFRA_REST_BASE || '';
 
     fetch(`${restBase}rentals`, {
       credentials: 'same-origin',
@@ -293,6 +326,34 @@ type Project = {
   serviceTags: ServiceSlug[];
   date?: string;
 };
+
+const buildenvSiteSettings = {
+  ...defaultSiteSettings,
+  ...buildenvContent.siteSettings,
+  heroImages: {
+    ...defaultSiteSettings.heroImages,
+    ...buildenvContent.siteSettings.heroImages,
+  },
+  galleries: {
+    ...defaultSiteSettings.galleries,
+    ...buildenvContent.siteSettings.galleries,
+  },
+  careers: {
+    ...defaultSiteSettings.careers,
+    ...buildenvContent.siteSettings.careers,
+  },
+  kernpuntenHome: Array.isArray(buildenvContent.siteSettings.kernpuntenHome)
+    ? buildenvContent.siteSettings.kernpuntenHome
+    : [],
+  werkgebied: Array.isArray(buildenvContent.siteSettings.werkgebied) ? buildenvContent.siteSettings.werkgebied : [],
+  kernpuntenOverOns: Array.isArray(buildenvContent.siteSettings.kernpuntenOverOns)
+    ? buildenvContent.siteSettings.kernpuntenOverOns
+    : [],
+} satisfies SiteSettings;
+
+const buildenvProjects = buildenvContent.projects as Project[];
+const buildenvServices = buildenvContent.services as Service[];
+const buildenvRentals = buildenvContent.rentals as RentalItem[];
 
 const navItems = [
   ['HOME', '/'],
@@ -367,18 +428,42 @@ function normalizePath(pathname: string) {
   return pathname.replace(/\/+$/, '') || '/';
 }
 
+function currentAppPath() {
+  const params = new URLSearchParams(window.location.search);
+  const fallbackPath = params.get('p');
+
+  if (fallbackPath) {
+    return normalizePath(fallbackPath);
+  }
+
+  return normalizePath(window.location.pathname);
+}
+
 function usePath() {
-  const [path, setPath] = useState(normalizePath(window.location.pathname));
+  const [path, setPath] = useState(currentAppPath());
 
   useEffect(() => {
-    const onPop = () => setPath(normalizePath(window.location.pathname));
+    const params = new URLSearchParams(window.location.search);
+    const fallbackPath = params.get('p');
+
+    if (!fallbackPath) {
+      return;
+    }
+
+    const normalizedPath = normalizePath(fallbackPath);
+    window.history.replaceState(null, '', normalizedPath + window.location.hash);
+    setPath(normalizedPath);
+  }, []);
+
+  useEffect(() => {
+    const onPop = () => setPath(currentAppPath());
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
   const navigate = (href: string) => {
     const normalizedHref = normalizePath(href);
-    if (normalizedHref === normalizePath(window.location.pathname)) {
+    if (normalizedHref === currentAppPath()) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -531,7 +616,7 @@ function HomePage({
   servicesLoaded: boolean;
   siteSettings: SiteSettings;
 }) {
-  const heroSlides = siteSettings.galleries.home;
+  const heroSlides = useMemo(() => normalizeImageSlides(siteSettings.galleries.home), [siteSettings.galleries.home]);
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
 
   useEffect(() => {
@@ -589,10 +674,10 @@ function HomePage({
 
       <ImageMarquee projects={projects} navigate={navigate} />
       <ServicesSection services={services} servicesLoaded={servicesLoaded} navigate={navigate} />
-      <ServiceArea places={siteSettings.werkgebied} />
-      <ProjectsPreview projects={projects} projectsLoaded={projectsLoaded} navigate={navigate} muted randomize limit={3} />
       <CareersBand navigate={navigate} />
+      <ProjectsPreview projects={projects} projectsLoaded={projectsLoaded} navigate={navigate} muted randomize limit={3} />
       <ContactSection siteSettings={siteSettings} />
+      <ServiceArea places={siteSettings.werkgebied} />
     </>
   );
 }

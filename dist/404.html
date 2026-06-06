@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WD Infra</title>
+    <script>
+      (function () {
+        var routeRoots = [
+          "diensten",
+          "dienst",
+          "projecten",
+          "project",
+          "verhuur",
+          "over-ons",
+          "over-wd-infra",
+          "werken-bij",
+          "contact",
+          "algemene-voorwaarden",
+          "privacy-statement",
+          "hero-voorbeelden"
+        ];
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        var routeIndex = parts.findIndex(function (part) {
+          return routeRoots.indexOf(part) !== -1;
+        });
+        var baseParts = routeIndex === -1 ? parts : parts.slice(0, routeIndex);
+        var routeParts = routeIndex === -1 ? [] : parts.slice(routeIndex);
+        var basePath = "/" + baseParts.join("/");
+
+        if (basePath !== "/") {
+          basePath += "/";
+        }
+
+        var appPath = routeParts.length ? "/" + routeParts.join("/") : "/";
+        var target = basePath + "?p=" + encodeURIComponent(appPath);
+
+        if (window.location.hash) {
+          target += window.location.hash;
+        }
+
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

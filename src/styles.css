@@ -1012,7 +1012,7 @@ main {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -2082,7 +2082,9 @@ main {
 }
 
 .area-section {
-  background: var(--color-white);
+  background:
+    linear-gradient(135deg, rgba(20, 48, 104, 0.035), transparent 42%),
+    var(--color-blue-soft);
 }
 
 .area-map {
@@ -2108,8 +2110,8 @@ main {
 .career-section {
   padding-block: clamp(34px, 5vw, 58px);
   background:
-    radial-gradient(circle at 86% 18%, rgba(20, 48, 104, 0.16), transparent 30%),
-    var(--color-white);
+    radial-gradient(circle at 86% 18%, rgba(20, 48, 104, 0.12), transparent 30%),
+    linear-gradient(180deg, var(--color-white), var(--color-blue-soft) 18%, var(--color-blue-soft) 82%, var(--color-white));
 }
 
 .career-panel {
@@ -2749,6 +2751,98 @@ main {
 
   .button:hover {
     transform: none;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1440px) {
+  :root {
+    --container: 1100px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .primary-nav {
+    gap: clamp(14px, 1.6vw, 22px);
+    font-size: 0.82rem;
+  }
+
+  .brand img {
+    width: 136px;
+  }
+
+  .hero-content {
+    padding-block: clamp(58px, 7vw, 86px) clamp(132px, 14vw, 174px);
+  }
+
+  .page-hero-content {
+    padding-block: clamp(48px, 6vw, 76px) clamp(42px, 5vw, 64px);
+  }
+
+  .hero h1 {
+    max-width: 700px;
+    font-size: clamp(2.55rem, 5.05vw, 4.65rem);
+  }
+
+  .page-hero h1 {
+    max-width: 720px;
+    font-size: clamp(2.25rem, 4.2vw, 3.8rem);
+  }
+
+  .section {
+    padding-block: clamp(58px, 6.2vw, 86px);
+  }
+
+  .section-heading h2,
+  .split-layout h2,
+  .area-layout h2,
+  .career-panel h2,
+  .contact-info h2,
+  .feature-panel h2,
+  .contact-teaser h2,
+  .detail-layout h2 {
+    font-size: clamp(2.05rem, 3.25vw, 3.25rem);
+  }
+
+  .hero-subtitle,
+  .page-hero p:not(.eyebrow) {
+    max-width: 620px;
+    font-size: 1.08rem;
+  }
+
+  .section-heading p,
+  .split-layout > div > p,
+  .area-layout p,
+  .career-panel p,
+  .contact-info p,
+  .feature-panel p,
+  .contact-teaser p,
+  .detail-layout p {
+    font-size: 1rem;
+  }
+
+  .service-card-body,
+  .project-card-body {
+    padding: 20px;
+  }
+
+  .service-card h3,
+  .project-card h3,
+  .value-card h3,
+  .process-card h3,
+  .check-list h3 {
+    font-size: 1.14rem;
+  }
+
+  .career-panel {
+    min-height: 270px;
+    padding: clamp(26px, 4vw, 44px);
+  }
+
+  .stats-card {
+    flex-basis: clamp(225px, 22vw, 268px);
+    min-height: 100px;
   }
 }
 
