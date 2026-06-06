@@ -2862,6 +2862,159 @@ main {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  :root {
+    --container: 1060px;
+  }
+
+  body {
+    font-size: 14.75px;
+  }
+
+  .hero-content {
+    padding-block: clamp(54px, 6.2vw, 78px) clamp(118px, 12vw, 152px);
+  }
+
+  .page-hero-content {
+    padding-block: clamp(42px, 5vw, 64px) clamp(36px, 4vw, 52px);
+  }
+
+  .hero h1 {
+    max-width: 650px;
+    font-size: clamp(2.5rem, 4.6vw, 4.15rem);
+  }
+
+  .page-hero h1 {
+    max-width: 650px;
+    font-size: clamp(2.15rem, 3.65vw, 3.25rem);
+  }
+
+  .section {
+    padding-block: clamp(52px, 5.4vw, 76px);
+  }
+
+  .section-heading {
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2,
+  .split-layout h2,
+  .area-layout h2,
+  .career-panel h2,
+  .contact-info h2,
+  .feature-panel h2,
+  .contact-teaser h2,
+  .detail-layout h2,
+  .about-intro-layout h2,
+  .project-detail-layout h2,
+  .rental-intro h2 {
+    font-size: clamp(1.95rem, 2.85vw, 2.85rem);
+  }
+
+  .projects-overview-panel h2,
+  .project-contact-panel h2 {
+    font-size: clamp(1.95rem, 3vw, 3rem);
+  }
+
+  .legal-layout h2 {
+    font-size: clamp(2rem, 3vw, 2.85rem);
+  }
+
+  .hero-subtitle,
+  .page-hero p:not(.eyebrow),
+  .project-contact-panel p {
+    font-size: 1.02rem;
+  }
+
+  .service-card h3,
+  .project-card h3,
+  .value-card h3,
+  .process-card h3,
+  .check-list h3 {
+    font-size: 1.08rem;
+  }
+
+  .service-card-body,
+  .project-card-body {
+    padding: 18px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  :root {
+    --container: 920px;
+  }
+
+  .hero-content {
+    padding-block: 54px 128px;
+  }
+
+  .page-hero-content {
+    padding-block: 44px 46px;
+  }
+
+  .hero h1 {
+    max-width: 620px;
+    font-size: clamp(2.45rem, 6.2vw, 3.65rem);
+  }
+
+  .page-hero h1 {
+    max-width: 620px;
+    font-size: clamp(2.1rem, 5.4vw, 3.05rem);
+  }
+
+  .section {
+    padding-block: 56px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading h2,
+  .split-layout h2,
+  .area-layout h2,
+  .career-panel h2,
+  .contact-info h2,
+  .feature-panel h2,
+  .contact-teaser h2,
+  .detail-layout h2,
+  .about-intro-layout h2,
+  .project-detail-layout h2,
+  .rental-intro h2,
+  .projects-overview-panel h2,
+  .project-contact-panel h2 {
+    font-size: clamp(1.9rem, 4.2vw, 2.65rem);
+  }
+
+  .hero-subtitle,
+  .page-hero p:not(.eyebrow) {
+    max-width: 580px;
+    font-size: 1rem;
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+  }
+
+  .section-heading-row .button {
+    min-width: 142px;
+  }
+
+  .service-card-body,
+  .project-card-body,
+  .check-list,
+  .contact-form {
+    padding: 18px;
+  }
+
+  .stats-card {
+    flex-basis: 220px;
+    min-height: 94px;
+  }
+}
+
 @media (max-width: 1120px) {
   .header-inner {
     grid-template-columns: auto minmax(0, 1fr);
